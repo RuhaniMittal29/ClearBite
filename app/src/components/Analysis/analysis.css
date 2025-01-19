@@ -1,21 +1,24 @@
 .card-background {
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 70vh;
+    align-items: flex-start; /* Align card to the top for dynamic height */
+    min-height: 70vh; /* Ensure the section takes at least 70% of viewport height */
     width: 100vw;
     background-color: thistle;
+    padding: 2rem; /* Add padding around the card */
 }
 
 .card {
-    height: 50vh;
     width: 60vw;
-    background-color: thistle;
+    background-color: #f7f0f7; /* Slightly lighter background for contrast */
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    padding: 2rem 2rem;
+    justify-content: flex-start; /* Adjust for dynamic content */
+    padding: 2rem;
+    border-radius: 10px; /* Add rounded corners */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+    overflow: visible; /* Allow content to expand the card */
 }
 
 .card-item {
@@ -27,7 +30,7 @@
 }
 
 .card-content {
-    padding-top: 2rem;
+    padding-top: 1rem;
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
@@ -35,45 +38,49 @@
     width: 100%;
 }
 
-.card-item {
-    display: flex; 
-    flex-direction: row; 
-    justify-content: flex-start;
-    align-items: center; 
-    gap: 1rem;
-    width: 100%; 
-    font-size: 1.2em;
-}
-
-.question {
-    flex-shrink: 0; 
-    width: 20rem;
-    text-align: right; 
-}
-
-
-.answer-file,
-.answer-text {
-    flex-grow: 0;
-    font-size: 1rem;
-    padding: 0.5rem;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    width: 25rem;
-    height: rem;
-}
-
-.uploaded-image {
-    width: 200px;
-    height: auto;
+.api-response {
     margin-top: 1rem;
-    border-radius: 5px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    background-color: #ffffff; /* White background for better readability */
+    border: 1px solid #ccc; /* Subtle border */
+    border-radius: 8px;
+    padding: 1rem;
+    width: 100%; /* Full width of the card */
+    font-size: 1.1rem; /* Slightly larger font size */
+    line-height: 1.5; /* Increase line height for better readability */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.api-response h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.api-response p {
+    margin: 0;
+    color: #555;
+    text-align: justify; /* Align text for readability */
+}
+
+.loading-message {
+    font-size: 1.2rem;
+    color: #666;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.disclaimer {
+    font-size: 0.9rem;
+    color: #666;
+    text-align: center;
+    margin-top: 1rem;
+    line-height: 1.4;
 }
 
 .submit-button {
     margin-top: 2rem;
-    background-color: white;
+    background-color: #ffffff;
     font-weight: 500;
     font-size: 1.2rem;
     border-radius: 8px;
@@ -86,8 +93,9 @@
 
 .submit-button:hover {
     border-color: #28A2E9;
-  }
-  .submit-buttonn:focus,
-  .submit-button:focus-visible {
+}
+
+.submit-button:focus,
+.submit-button:focus-visible {
     outline: 4px auto #28A2E9;
-  }
+}
