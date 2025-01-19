@@ -5,6 +5,7 @@ import './index.css'
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
 import Home from "./components/Home/home.jsx";
 import Analysis from "./components/Analysis/analysis.jsx";
+import Diagnosis from './components/Diagnosis/diagnosis.jsx';
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
@@ -13,6 +14,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Routes>
           <Route exact path="/" element={<App customComponent={Home}/>}/>
           <Route exact path="/analysis" element={<App customComponent={Analysis}/>}/>
+          {/* <Route exact path="/diagnosis" element={<App customComponent={Diagnosis}></App>}></Route> */}
         </Routes>
       </Router>
   </React.StrictMode>
