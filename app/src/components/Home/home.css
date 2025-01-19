@@ -1,0 +1,110 @@
+.herosection {
+    padding-left: 3rem;
+    padding-top: 2rem;
+    height: 20vh;
+}
+
+.title1 {
+    font-size: 2rem;
+    line-height: 0.4;
+}
+
+.title2 {
+    font-size: 4rem;
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+.title3 {
+    font-size: 1.2rem;
+    line-height: 0.5;
+    font-weight: 300;
+}
+
+.banner1 {
+    display: flex;
+    background-color: rgba(143, 198, 249, 0.761);
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.banner1left {
+    padding-left: 3rem;
+    /* justify-content: center; */
+    display: flex;
+    align-items: center;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+}
+
+.banner1text {
+    font-size: 2rem;
+    font-weight: 500;
+    max-width: 90dvh;
+}
+
+.banner1button {
+    margin-top: 2rem;
+    background-color: white;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+.banner2text {
+    font-size: 1.1rem;
+    font-weight: 450;
+    max-width: 90vh;
+    font-weight: 300;
+}
+
+.food {
+    /* padding-right: 4rem; */
+    display: flex;
+    align-items: center;
+    height: 40vh;
+}
+
+.banner2 {
+    display: flex;
+    flex-direction: row;
+    background-color: thistle;
+    width: 100vw;
+
+}
+
+.banner2right {
+    margin-left: 5rem;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+
+}
+
+.banner3text {
+    font-size: 1.1rem;
+    max-width: 90vh;
+    font-weight: 300;
+}
+
+.dairy {
+    display: flex;
+    align-items: center;
+    height: 40vh;
+}
+
+.footer {
+    height: 5rem;
+    padding-left: 3rem;
+    display: flex;
+    align-items: center;
+}
