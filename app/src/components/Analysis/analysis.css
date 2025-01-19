@@ -1,14 +1,14 @@
 .card-background {
     display: flex;
     justify-content: center;
-    align-items: flex-start; /* Align card to the top for dynamic height */
-    min-height: 70vh; /* Ensure the section takes at least 70% of viewport height */
+    align-items: flex-start; /* Align card to the top for dynamic height */;
     width: 100vw;
     background-color: thistle;
     padding: 2rem; /* Add padding around the card */
 }
 
 .card {
+    min-height: 85%;
     width: 60vw;
     background-color: #f7f0f7; /* Slightly lighter background for contrast */
     display: flex;
@@ -16,7 +16,7 @@
     align-items: center;
     justify-content: flex-start; /* Adjust for dynamic content */
     padding: 2rem;
-    border-radius: 10px; /* Add rounded corners */
+    border-radius: 20px; /* Add rounded corners */
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
     overflow: visible; /* Allow content to expand the card */
 }
@@ -97,5 +97,30 @@
 
 .submit-button:focus,
 .submit-button:focus-visible {
+    outline: 4px auto #28A2E9;
+}
+
+.answer-text {
+    font-size: 1rem;
+    color: #333;
+    text-align: center;
+    min-width: 30rem;
+    min-height: 1.3rem;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    padding: 0.5em 1em;
+    font-family: inherit;
+    cursor: pointer;
+    transition: border-color 0.25s;
+
+}
+
+
+.answer-text:hover {
+    border-color: #28A2E9;
+}
+
+.answer-text:focus,
+.answer-text:focus-visible {
     outline: 4px auto #28A2E9;
 }

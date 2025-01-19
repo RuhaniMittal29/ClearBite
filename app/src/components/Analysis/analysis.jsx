@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import './analysis.css';
+import Fork from "../../assets/fork.png"
 
 const Analysis = () => {
     const [file, setFile] = useState(); // For image file (if needed later)
@@ -60,6 +61,7 @@ const Analysis = () => {
             <div className="herosection">
                 <span className="title1">the</span>
                 <span className="title2">ClearBite</span>
+                <img src= {Fork} alt="banner2" className="fork"/> 
                 <span className="title3"><br />Your journey to clear skin starts today!</span>
             </div>
             <div className="card-background">
@@ -100,7 +102,7 @@ const Analysis = () => {
                             <input
                                 type="text"
                                 name="answer_diet_restriction"
-                                placeholder="eg.: vegeterian/ halal/ lactose intolerant"
+                                placeholder="eg.: vegetarian/ halal/ lactose intolerant"
                                 className="answer-text"
                                 value={dietaryRestriction}
                                 onChange={(e) => setDietaryRestriction(e.target.value)} // Update dietary restriction state

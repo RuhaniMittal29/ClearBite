@@ -1,9 +1,10 @@
 import React from "react";
 import './home.css';
 import Image from "../../assets/healthy food.webp"
-import Sweet from "../../assets/sweet.jpeg"
+import Fork from "../../assets/fork.png"
 import Dairy from "../../assets/image.png"
 import { useNavigate } from "react-router-dom";
+import { useTypewriter, Cursor} from 'react-simple-typewriter';
 
 const Home = () => {
 
@@ -13,21 +14,34 @@ const Home = () => {
         navigate("/analysis");
       };
 
+      const [text] = useTypewriter({
+        words: ['Eat for the skin you want, not the skin you have.', 'Clear skin is just a meal plan away.', 'What you eat today reflects on your skin tomorrow.'],
+        loop: {},
+        typeSpeed: 50, 
+        deleteSpeed: 50,
+    });
+
   return (
     <div className="home">
         <div className="herosection">
             <span className="title1">the</span>
             <span className="title2">ClearBite</span>
-            <span className="title3"><br/>Your journey to clear skin starts today!</span>
+            <img src= {Fork} alt="banner2" className="fork"/> 
+            <div className="pic">
+                <span className="title3"><br/>Your journey to clear skin starts today!</span>
+            </div>
         </div>
         <div className="banner1">
             <div className="banner1left">
-                <span className="banner1text">Eat for the skin you want, not the skin you have.</span>
+                <span className="banner1text">
+                        {text}
+                        <Cursor/>
+                    </span>
                 <span className="banner2text"><br/>ClearBite uses advanced AI to analyze your dietary habits and identify potential triggers for acne. Let us guide you towards a skin-friendly lifestyle.</span>
                 <button className="banner1button" onClick={handleClick}>Get Started</button>
             </div>
             <div className="banner1right">
-                <img src= {Image} alt="banner1" className="food"/>
+                <img src= {Image} alt="banner2" className="image"/> 
             </div>
         </div>
 
