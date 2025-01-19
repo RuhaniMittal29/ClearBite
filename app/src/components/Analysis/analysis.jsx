@@ -23,7 +23,7 @@ const Analysis = () => {
             prompt: `Diet: ${diet}, Dietary Restrictions: ${dietaryRestriction}`,
         });
 
-        const url = `https://ff4d-34-124-218-88.ngrok-free.app/predict?${params.toString()}`; // change this url 
+        const url = `https://dd77-34-124-218-88.ngrok-free.app/predict?${params.toString()}`; // change this url 
 
         try {
             console.log("Sending request to:", url);
