@@ -24,7 +24,7 @@ const Analysis = () => {
             prompt: `Diet: ${diet}, Dietary Restrictions: ${dietaryRestriction}`,
         });
 
-        const url = `https://dd77-34-124-218-88.ngrok-free.app/predict?${params.toString()}`; // change this url 
+        const url = `https://33a0-34-87-162-164.ngrok-free.app/predict?${params.toString()}`; // change this url 
 
         try {
             console.log("Sending request to:", url);
@@ -61,7 +61,7 @@ const Analysis = () => {
             <div className="herosection">
                 <span className="title1">the</span>
                 <span className="title2">ClearBite</span>
-                <img src= {Fork} alt="banner2" className="fork"/> 
+                <img src={Fork} alt="banner2" className="fork" />
                 <span className="title3"><br />Your journey to clear skin starts today!</span>
             </div>
             <div className="card-background">
