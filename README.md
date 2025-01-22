@@ -13,7 +13,7 @@ ClearBite is a personalized AI-powered assistant that helps users discover the d
 
 ## How we built it
 
-*Frontend*: Built using React, HTML, and CSS, we designed a clean and minimalist user interface that is intuitive and user-friendly. *AI Model: We fine-tuned the Mistral AI model (with 7 billion parameters) on a custom dataset curated from multiple research papers. These papers highlighted dietary triggers for acne and their possible replacements. Data cleaning and preprocessing were key to creating a high-quality dataset for fine-tuning. *Backend*: Using Flask, we developed an API to connect the Mistral AI model with our frontend. This seamless integration allowed users to interact with the AI for tailored advice.
+*Frontend*: Built using React, HTML, and CSS, we designed a clean and minimalist user interface that is intuitive and user-friendly. *AI Model*: We fine-tuned the Mistral AI model (with 7 billion parameters) on a custom dataset curated from multiple research papers. These papers highlighted dietary triggers for acne and their possible replacements. Data cleaning and preprocessing were key to creating a high-quality dataset for fine-tuning. *Backend*: Using Flask, we developed an API to connect the Mistral AI model with our frontend. This seamless integration allowed users to interact with the AI for tailored advice.
 
 ## Tech-Stack
 - React JS
